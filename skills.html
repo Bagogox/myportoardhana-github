@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Skills &amp; Education | Engr. Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f3f9",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "outline": "#757682",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "surface-dim": "#dad9e0",
+                        "inverse-primary": "#b3c5ff",
+                        "secondary": "#545f72",
+                        "on-surface-variant": "#444650",
+                        "on-primary-container": "#758dd5",
+                        "surface-tint": "#435b9f",
+                        "on-primary": "#ffffff",
+                        "primary": "#00113a",
+                        "inverse-surface": "#2f3035",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#efedf3",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#586377",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d5e0f7",
+                        "on-primary-fixed": "#00174a",
+                        "tertiary": "#2d0700",
+                        "on-tertiary-fixed-variant": "#783018",
+                        "on-surface": "#1a1b20",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-variant": "#e3e2e8",
+                        "surface-container-high": "#e9e7ee",
+                        "on-tertiary-container": "#d37758",
+                        "on-tertiary-fixed": "#390b00",
+                        "surface-bright": "#faf8ff",
+                        "on-background": "#1a1b20",
+                        "surface-container-highest": "#e3e2e8",
+                        "tertiary-container": "#501300",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "primary-container": "#002366",
+                        "surface": "#faf8ff",
+                        "on-secondary-fixed": "#111c2c",
+                        "tertiary-fixed": "#ffdbd0",
+                        "background": "#faf8ff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f0f6",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "outline-variant": "#c5c6d2",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dbe1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.8rem",
+                        "xl": "1.2rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "display-xl-mobile": ["Montserrat"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-xl": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-xl-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .technical-grid-bg {
+            background-image: radial-gradient(circle, #EDF2F7 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .skill-bar-fill {
+            transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+            <a href="index.html" class="text-headline-md font-headline-md font-bold text-primary">Ilham Yudhistira Ardhana, S.T</a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="index.html">Home</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="projects.html">Projects</a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1" href="skills.html">Skills</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="contact.html">Contact</a>
+            </nav>
+            <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="hidden md:flex bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-sm uppercase tracking-wide hover:opacity-90 transition-opacity items-center gap-2">
+                Download CV
+                <span class="material-symbols-outlined text-[20px]">download</span>
+            </a>
+            <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant px-6 py-4 flex flex-col gap-4">
+            <a class="text-secondary text-label-sm py-1" href="index.html">Home</a>
+            <a class="text-secondary text-label-sm py-1" href="projects.html">Projects</a>
+            <a class="text-primary font-bold text-label-sm py-1" href="skills.html">Skills</a>
+            <a class="text-secondary text-label-sm py-1" href="contact.html">Contact</a>
+            <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="bg-primary text-on-primary text-center px-6 py-2.5 rounded-lg font-label-sm">Download CV</a>
+        </div>
+    </header>
+    <main class="overflow-hidden">
+        <!-- Hero Section / Header for Skills -->
+        <section class="relative py-20 technical-grid-bg border-b border-outline-variant">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 space-y-6">
+                        <span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm rounded-full">CREDENTIALS</span>
+                        <h1 class="text-display-xl-mobile md:text-display-xl font-display-xl text-primary leading-tight">Expertise &amp; <br/>Academic Journey</h1>
+                        <p class="text-body-lg text-secondary max-w-xl">
+                            A comprehensive overview of my technical capabilities, educational background from Universitas Muhammadiyah Surakarta, and professional certifications in Electrical Engineering.
+                        </p>
+                    </div>
+                    <div class="w-full md:w-[400px] h-[300px] bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant relative group">
+                        <div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img class="w-full h-full object-cover" alt="Studio Portrait" src="assets/images/skills_hero_portrait.jpeg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Technical Skills Section -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex flex-col md:flex-row gap-gutter">
+                    <div class="md:w-1/3 mb-12 md:mb-0">
+                        <h2 class="text-headline-lg font-headline-lg text-primary mb-4">Technical Mastery</h2>
+                        <p class="text-secondary text-body-md">Core engineering competencies developed through rigorous academic projects and practical application in power systems and automation.</p>
+                        <div class="mt-12 space-y-8">
+                            <h3 class="text-label-sm font-label-sm text-outline uppercase tracking-widest">Soft Skills</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-surface-container-low border border-outline-variant rounded-lg text-primary font-medium flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-[18px]">psychology</span> Problem Solving
+                                </span>
+                                <span class="px-4 py-2 bg-surface-container-low border border-outline-variant rounded-lg text-primary font-medium flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-[18px]">groups</span> Team Leadership
+                                </span>
+                                <span class="px-4 py-2 bg-surface-container-low border border-outline-variant rounded-lg text-primary font-medium flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-[18px]">forum</span> Technical Communication
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-1 gap-8">
+                        <!-- PLC Programming -->
+                        <div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg text-primary">
+                                        <span class="material-symbols-outlined">settings_input_component</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-primary text-body-lg">PLC Programming</h4>
+                                        <p class="text-label-sm text-secondary">CX Programmer, TIA Portal</p>
+                                    </div>
+                                </div>
+                                <span class="text-primary font-bold">80%</span>
+                            </div>
+                            <div class="h-3 w-full bg-surface-container rounded-full overflow-hidden relative">
+                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <!-- Electrical Installation -->
+                        <div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg text-primary">
+                                        <span class="material-symbols-outlined">bolt</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-primary text-body-lg">Electrical Installation</h4>
+                                        <p class="text-label-sm text-secondary">Industrial &amp; Domestic Wiring Standards</p>
+                                    </div>
+                                </div>
+                                <span class="text-primary font-bold">85%</span>
+                            </div>
+                            <div class="h-3 w-full bg-surface-container rounded-full overflow-hidden relative">
+                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <!-- Circuit Design -->
+                        <div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg text-primary">
+                                        <span class="material-symbols-outlined">memory</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-primary text-body-lg">Circuit Design (EasyEDA/Proteus)</h4>
+                                        <p class="text-label-sm text-secondary">PCB Layout</p>
+                                    </div>
+                                </div>
+                                <span class="text-primary font-bold">88%</span>
+                            </div>
+                            <div class="h-3 w-full bg-surface-container rounded-full overflow-hidden relative">
+                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <!-- MATLAB -->
+                        <div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg text-primary">
+                                        <span class="material-symbols-outlined">functions</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-primary text-body-lg">MATLAB &amp; Simulink</h4>
+                                        <p class="text-label-sm text-secondary">Control Systems, Signal Processing</p>
+                                    </div>
+                                </div>
+                                <span class="text-primary font-bold">82%</span>
+                            </div>
+                            <div class="h-3 w-full bg-surface-container rounded-full overflow-hidden relative">
+                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                        <!-- Power System Analysis -->
+                        <div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg text-primary">
+                                        <span class="material-symbols-outlined">account_tree</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-primary text-body-lg">Power System Analysis</h4>
+                                        <p class="text-label-sm text-secondary">Load Flow, Fault Calculation (ETAP), PVSyst</p>
+                                    </div>
+                                </div>
+                                <span class="text-primary font-bold">92%</span>
+                            </div>
+                            <div class="h-3 w-full bg-surface-container rounded-full overflow-hidden relative">
+                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education Timeline -->
+        <section class="py-24 bg-surface-container-low">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-16">
+                    <h2 class="text-headline-lg font-headline-lg text-primary">Academic Foundation</h2>
+                    <p class="text-secondary text-body-md mt-2">Institutional background and academic achievements</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute left-1/2 -translate-x-1/2 h-full w-px bg-outline-variant hidden md:block"></div>
+                    <div class="flex flex-col gap-12">
+                        <!-- UMS Entry -->
+                        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+                            <div class="flex-1 md:text-right md:pr-12">
+                                <h3 class="text-headline-md text-primary">Universitas Muhammadiyah Surakarta</h3>
+                                <p class="text-label-sm font-bold text-primary-container uppercase tracking-wider mt-1">BACHELOR OF ELECTRICAL ENGINEERING</p>
+                                <p class="text-body-md text-secondary mt-4">Focused on Power Systems and Automation. Developed a thesis on smart grid efficiency using renewable energy integration.</p>
+                            </div>
+                            <div class="z-10 w-10 h-10 rounded-full bg-primary border-4 border-surface-container-lowest flex items-center justify-center text-white">
+                                <span class="material-symbols-outlined text-[16px]">school</span>
+                            </div>
+                            <div class="flex-1 md:pl-12 w-full">
+                                <div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant space-y-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-label-sm bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full">2021 — 2025</span>
+                                        <span class="text-headline-md font-bold text-primary">GPA 3.40</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-label-sm font-bold text-outline mb-1 uppercase tracking-tighter">Core Coursework</p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="text-label-sm px-2 py-0.5 bg-surface-container rounded border border-outline-variant">Power Systems</span>
+                                            <span class="text-label-sm px-2 py-0.5 bg-surface-container rounded border border-outline-variant">Microcontrollers</span>
+                                            <span class="text-label-sm px-2 py-0.5 bg-surface-container rounded border border-outline-variant">Renewable Energy</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="text-label-sm font-bold text-outline mb-1 uppercase tracking-tighter">Organizations</p>
+                                        <p class="text-body-md text-on-surface-variant mb-2">Active Member of <strong>Laboratory Assistant Electrical Engineering UMS</strong>.</p>
+                                        <p class="text-body-md text-on-surface-variant">Active Member of <strong>PPK Ormawa KMTE FT UMS 2024</strong> (Directorate General of Higher Education funded research).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certifications -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex items-end justify-between mb-12">
+                    <div>
+                        <h2 class="text-headline-lg font-headline-lg text-primary">Certifications &amp; Training</h2>
+                        <p class="text-secondary text-body-md mt-2">Verified professional credentials and continuous learning.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                    <!-- Cert 1 -->
+                    <div class="p-8 border border-outline-variant rounded-xl hover:border-primary transition-colors bg-surface-container-lowest group flex flex-col justify-between">
+                        <div>
+                            <div class="text-primary-container font-bold text-label-sm mb-4">2023</div>
+                            <h4 class="text-headline-md font-headline-md text-primary mb-2">Certified Intern as Staff Electric/Power</h4>
+                            <p class="text-body-md text-secondary mb-6">Managed and optimized company electrical distribution infrastructure from 150kV high-voltage substations to plant-level systems.</p>
+                        </div>
+                        <span class="text-label-sm font-bold text-outline">Kemnaker, PT. Asia Pacific Fibers Tbk</span>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="p-8 border border-outline-variant rounded-xl hover:border-primary transition-colors bg-surface-container-lowest group flex flex-col justify-between">
+                        <div>
+                            <div class="text-primary-container font-bold text-label-sm mb-4">2025</div>
+                            <h4 class="text-headline-md font-headline-md text-primary mb-2">Project Based Learning Batch 3</h4>
+                            <p class="text-body-md text-secondary mb-6">Installation of Smart Building Integration Systems.</p>
+                        </div>
+                        <span class="text-label-sm font-bold text-outline">BPVP Surakarta</span>
+                    </div>
+                    <!-- Cert 3 -->
+                    <div class="p-8 border border-outline-variant rounded-xl hover:border-primary transition-colors bg-surface-container-lowest group flex flex-col justify-between">
+                        <div>
+                            <div class="text-primary-container font-bold text-label-sm mb-4">2022</div>
+                            <h4 class="text-headline-md font-headline-md text-primary mb-2">LBIPU UMS Language Institute</h4>
+                            <p class="text-body-md text-secondary mb-6">Training of Trainers English Tutorial Program.</p>
+                        </div>
+                        <span class="text-label-sm font-bold text-outline">LBIPU UMS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-24 bg-primary relative overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+                <h2 class="text-display-xl-mobile md:text-headline-lg font-headline-lg text-white mb-6">Looking for a precision-driven engineer?</h2>
+                <p class="text-body-lg text-primary-fixed mb-10 max-w-2xl mx-auto">I am ready to bring my technical skills and academic background from UMS to your next complex project.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                    <a href="contact.html" class="bg-[#FFD700] text-primary px-8 py-4 rounded-lg font-bold uppercase tracking-widest hover:brightness-110 transition-all flex items-center gap-2">
+                        Get In Touch <span class="material-symbols-outlined">mail</span>
+                    </a>
+                    <a href="projects.html" class="border border-white/30 text-white px-8 py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-white/10 transition-all">
+                        View Portfolio
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto gap-gutter">
+            <div class="flex flex-col items-center md:items-start gap-2">
+                <div class="text-label-sm font-bold text-primary uppercase tracking-widest">ENGR. PORTFOLIO</div>
+                <p class="text-body-md text-on-surface-variant text-center md:text-left">© 2025 Electrical Engineering Graduate | Universitas Muhammadiyah Surakarta</p>
+            </div>
+            <div class="flex gap-8">
+                <a class="text-on-surface-variant hover:text-on-primary-container transition-colors" href="https://linkedin.com/in/ilhamyudhistiraardhana" target="_blank">LinkedIn</a>
+                <a class="text-on-surface-variant hover:text-on-primary-container transition-colors" href="#" target="_blank">ResearchGate</a>
+                <a class="text-on-surface-variant hover:text-on-primary-container transition-colors" href="mailto:ilhamyudhistiraardhana10@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

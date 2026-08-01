@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact &amp; CV | Engr. Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f3f9",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "outline": "#757682",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "surface-dim": "#dad9e0",
+                        "inverse-primary": "#b3c5ff",
+                        "secondary": "#545f72",
+                        "on-surface-variant": "#444650",
+                        "on-primary-container": "#758dd5",
+                        "surface-tint": "#435b9f",
+                        "on-primary": "#ffffff",
+                        "primary": "#00113a",
+                        "inverse-surface": "#2f3035",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#efedf3",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#586377",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d5e0f7",
+                        "on-primary-fixed": "#00174a",
+                        "tertiary": "#2d0700",
+                        "on-tertiary-fixed-variant": "#783018",
+                        "on-surface": "#1a1b20",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-variant": "#e3e2e8",
+                        "surface-container-high": "#e9e7ee",
+                        "on-tertiary-container": "#d37758",
+                        "on-tertiary-fixed": "#390b00",
+                        "surface-bright": "#faf8ff",
+                        "on-background": "#1a1b20",
+                        "surface-container-highest": "#e3e2e8",
+                        "tertiary-container": "#501300",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "primary-container": "#002366",
+                        "surface": "#faf8ff",
+                        "on-secondary-fixed": "#111c2c",
+                        "tertiary-fixed": "#ffdbd0",
+                        "background": "#faf8ff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f0f6",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "outline-variant": "#c5c6d2",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dbe1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "8px",
+                        "xl": "12px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "display-xl-mobile": ["Montserrat"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-xl": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-xl-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F7FAFC;
+            font-family: 'Inter', sans-serif;
+            color: #1a1b20;
+        }
+        .technical-grid {
+            background-image: 
+                linear-gradient(#EDF2F7 1px, transparent 1px),
+                linear-gradient(90deg, #EDF2F7 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
+        <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+            <a href="index.html" class="text-headline-md font-headline-md font-bold text-primary">
+                Ilham Yudhistira Ardhana, S.T
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="index.html">Home</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="projects.html">Projects</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="skills.html">Skills</a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1" href="contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="hidden md:flex items-center px-6 py-2.5 bg-primary-container text-on-primary-container font-label-sm text-label-sm rounded-lg hover:opacity-80 transition-opacity">
+                    Download CV
+                </a>
+                <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant px-6 py-4 flex flex-col gap-4">
+            <a class="text-secondary text-label-sm py-1" href="index.html">Home</a>
+            <a class="text-secondary text-label-sm py-1" href="projects.html">Projects</a>
+            <a class="text-secondary text-label-sm py-1" href="skills.html">Skills</a>
+            <a class="text-primary font-bold text-label-sm py-1" href="contact.html">Contact</a>
+            <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="bg-primary text-on-primary text-center px-6 py-2.5 rounded-lg font-label-sm">Download CV</a>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <!-- Hero & Contact Section -->
+        <section class="relative technical-grid py-20 px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                <!-- Left Column: Header and Contact Info -->
+                <div class="lg:col-span-5 space-y-12">
+                    <div class="space-y-4">
+                        <span class="text-label-sm font-label-sm text-primary uppercase tracking-widest bg-secondary-container px-3 py-1 rounded-full">Contact Me</span>
+                        <h1 class="text-display-xl-mobile md:text-display-xl font-display-xl text-primary leading-tight">
+                            Let's Collaborate
+                        </h1>
+                        <p class="text-body-lg font-body-lg text-secondary max-w-md">
+                            I am open to technical discussions, research collaboration opportunities, or professional electrical engineering projects.
+                        </p>
+                    </div>
+                    <div class="space-y-6">
+                        <!-- Email Card -->
+                        <div class="flex items-center gap-4 p-4 bg-white border border-outline-variant rounded-xl group hover:shadow-lg transition-all duration-300">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary-container text-white rounded-lg">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <p class="text-label-sm font-label-sm text-outline">Professional Email</p>
+                                <a class="text-body-md font-bold text-primary hover:underline" href="mailto:ilhamyudhistiraardhana10@gmail.com">ilhamyudhistiraardhana10@gmail.com</a>
+                            </div>
+                        </div>
+                        <!-- LinkedIn Card -->
+                        <div class="flex items-center gap-4 p-4 bg-white border border-outline-variant rounded-xl group hover:shadow-lg transition-all duration-300">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary-container text-white rounded-lg">
+                                <span class="material-symbols-outlined">share</span>
+                            </div>
+                            <div>
+                                <p class="text-label-sm font-label-sm text-outline">LinkedIn</p>
+                                <a class="text-body-md font-bold text-primary hover:underline" href="https://linkedin.com/in/ilhamyudhistiraardhana" target="_blank">linkedin.com/in/ilhamyudhistiraardhana</a>
+                            </div>
+                        </div>
+                        <!-- WhatsApp Card -->
+                        <div class="flex items-center gap-4 p-4 bg-white border border-outline-variant rounded-xl group hover:shadow-lg transition-all duration-300">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary-container text-white rounded-lg">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <p class="text-label-sm font-label-sm text-outline">WhatsApp</p>
+                                <a class="text-body-md font-bold text-primary hover:underline" href="https://wa.me/6288229731800" target="_blank">+62 882 2973 1800</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CV Download Bento Card -->
+                    <div id="cv" class="p-8 bg-primary text-white rounded-xl relative overflow-hidden group">
+                        <div class="absolute -right-10 -bottom-10 opacity-10 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-[160px]">description</span>
+                        </div>
+                        <div class="relative z-10 space-y-6">
+                            <h3 class="text-headline-md font-headline-md">Professional Resume</h3>
+                            <p class="text-body-md opacity-80 max-w-xs">
+                                Learn more about my academic track record and project experience through the complete CV document.
+                            </p>
+                            <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="flex items-center gap-3 px-8 py-4 bg-white text-primary rounded-lg font-bold hover:bg-secondary-fixed transition-colors w-fit">
+                                <span class="material-symbols-outlined">download</span>
+                                Download Full CV (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Form & Map -->
+                <div class="lg:col-span-7 space-y-gutter">
+                    <!-- Form Card -->
+                    <div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm">
+                        <form class="space-y-6" id="contactForm">
+                            <!-- Honeypot anti-spam: harus tetap kosong, bot biasanya otomatis mengisi -->
+                            <div class="hidden" aria-hidden="true">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-label-sm font-label-sm text-primary uppercase">Full Name</label>
+                                    <input required id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Enter your name" type="text">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-label-sm font-label-sm text-primary uppercase">Email</label>
+                                    <input required id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="name@email.com" type="email">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-label-sm font-label-sm text-primary uppercase">Message</label>
+                                <textarea required id="message" name="message" class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none" placeholder="How can I help you?" rows="5"></textarea>
+                            </div>
+                            <p id="formError" class="hidden text-red-600 text-body-md font-body-md"></p>
+                            <button class="w-full md:w-auto px-12 py-4 bg-primary text-white font-bold rounded-lg hover:opacity-90 transition-all flex items-center justify-center gap-2" type="submit">
+                                Send Message
+                                <span class="material-symbols-outlined">send</span>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Map Section -->
+                    <div class="bg-white border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+                        <div class="p-6 border-b border-outline-variant flex justify-between items-center bg-surface-container-low">
+                            <div>
+                                <p class="text-label-sm font-label-sm text-outline">Current Location</p>
+                                <p class="text-body-md font-bold text-primary">Surakarta, Indonesia</p>
+                            </div>
+                            <div class="flex items-center gap-2 text-primary">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span class="text-label-sm font-bold">UMS Campus Area</span>
+                            </div>
+                        </div>
+                        <div class="h-64 bg-surface-container-highest relative group">
+                            <div class="bg-cover bg-center w-full h-full grayscale hover:grayscale-0 transition-all duration-700" style="background-image: url('assets/images/map.jpg')"></div>
+                            <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-primary/20 rounded-full animate-ping"></div>
+                                    <div class="w-6 h-6 bg-primary border-4 border-white rounded-full shadow-lg relative z-10"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-12 max-w-container-max mx-auto gap-gutter">
+            <div class="flex flex-col gap-2 items-center md:items-start">
+                <div class="text-label-sm font-label-sm font-bold text-primary uppercase tracking-widest">ENGR. PORTFOLIO</div>
+                <p class="text-body-md font-body-md text-on-surface-variant text-center md:text-left">
+                    © 2025 Electrical Engineering Graduate | Universitas Muhammadiyah Surakarta
+                </p>
+            </div>
+            <nav class="flex gap-8">
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-on-primary-container transition-colors" href="https://linkedin.com/in/ilhamyudhistiraardhana" target="_blank">LinkedIn</a>
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-on-primary-container transition-colors" href="#" target="_blank">ResearchGate</a>
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-on-primary-container transition-colors" href="mailto:ilhamyudhistiraardhana10@gmail.com">Email</a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = this;
+            const btn = form.querySelector('button[type="submit"]');
+            const errorEl = document.getElementById('formError');
+            const originalContent = btn.innerHTML;
+
+            errorEl.classList.add('hidden');
+            errorEl.textContent = '';
+
+            const payload = {
+                name: form.name.value.trim(),
+                email: form.email.value.trim(),
+                message: form.message.value.trim(),
+                company: form.company.value // honeypot, harus kosong
+            };
+
+            btn.disabled = true;
+            btn.innerHTML = `<span class="material-symbols-outlined animate-spin">sync</span> Sending...`;
+
+            try {
+                const res = await fetch('/api/send-message', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json().catch(() => ({}));
+
+                if (!res.ok) {
+                    throw new Error(data.error || 'Gagal mengirim pesan. Silakan coba lagi.');
+                }
+
+                btn.innerHTML = `<span class="material-symbols-outlined">check_circle</span> Sent Successfully`;
+                btn.classList.replace('bg-primary', 'bg-green-600');
+
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.innerHTML = originalContent;
+                    btn.classList.replace('bg-green-600', 'bg-primary');
+                    form.reset();
+                }, 3000);
+            } catch (err) {
+                btn.disabled = false;
+                btn.innerHTML = originalContent;
+                errorEl.textContent = err.message || 'Terjadi kesalahan. Silakan coba lagi.';
+                errorEl.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

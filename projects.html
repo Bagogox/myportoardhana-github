@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Technical &amp; Research Projects | Engr. Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .circuit-pattern {
+            background-color: #faf8ff;
+            background-image: radial-gradient(#dbe1ff 0.5px, transparent 0.5px), radial-gradient(#dbe1ff 0.5px, #faf8ff 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.4;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f3f9",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "outline": "#757682",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "surface-dim": "#dad9e0",
+                        "inverse-primary": "#b3c5ff",
+                        "secondary": "#545f72",
+                        "on-surface-variant": "#444650",
+                        "on-primary-container": "#758dd5",
+                        "surface-tint": "#435b9f",
+                        "on-primary": "#ffffff",
+                        "primary": "#00113a",
+                        "inverse-surface": "#2f3035",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#efedf3",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#586377",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d5e0f7",
+                        "on-primary-fixed": "#00174a",
+                        "tertiary": "#2d0700",
+                        "on-tertiary-fixed-variant": "#783018",
+                        "on-surface": "#1a1b20",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-variant": "#e3e2e8",
+                        "surface-container-high": "#e9e7ee",
+                        "on-tertiary-container": "#d37758",
+                        "on-tertiary-fixed": "#390b00",
+                        "surface-bright": "#faf8ff",
+                        "on-background": "#1a1b20",
+                        "surface-container-highest": "#e3e2e8",
+                        "tertiary-container": "#501300",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "primary-container": "#002366",
+                        "surface": "#faf8ff",
+                        "on-secondary-fixed": "#111c2c",
+                        "tertiary-fixed": "#ffdbd0",
+                        "background": "#faf8ff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f0f6",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "outline-variant": "#c5c6d2",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dbe1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "display-xl-mobile": ["Montserrat"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-xl": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-xl-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md">
+    <!-- TopNavBar -->
+    <header class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
+        <nav class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+            <a href="index.html" class="text-headline-md font-headline-md font-bold text-primary">
+                Ilham Yudhistira Ardhana, S.T
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="index.html">Home</a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1" href="projects.html">Projects</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="skills.html">Skills</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200" href="contact.html">Contact</a>
+                <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-sm hover:opacity-90 transition-all">
+                    Download CV
+                </a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant px-6 py-4 flex flex-col gap-4">
+            <a class="text-secondary text-label-sm py-1" href="index.html">Home</a>
+            <a class="text-primary font-bold text-label-sm py-1" href="projects.html">Projects</a>
+            <a class="text-secondary text-label-sm py-1" href="skills.html">Skills</a>
+            <a class="text-secondary text-label-sm py-1" href="contact.html">Contact</a>
+            <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="bg-primary text-on-primary text-center px-6 py-2.5 rounded-lg font-label-sm">Download CV</a>
+        </div>
+    </header>
+    <main class="relative min-h-screen overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 circuit-pattern pointer-events-none"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop py-20 relative z-10">
+            <!-- Hero / Title Section -->
+            <div class="mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full mb-4">
+                    <span class="material-symbols-outlined text-[18px]">engineering</span>
+                    <span class="text-label-sm">ENGINEERING PORTFOLIO</span>
+                </div>
+                <h1 class="text-display-xl font-display-xl text-primary mb-4">Technical &amp; Research Projects</h1>
+                <p class="text-body-lg text-secondary max-w-2xl">
+                    A collection of implementations in renewable energy systems, industrial automation, and hardware development that prioritize precision and technological innovation.
+                </p>
+            </div>
+            <!-- Filter Controls -->
+            <div class="flex flex-wrap items-center gap-4 mb-12" id="filter-container">
+                <button class="px-6 py-2 rounded-full font-label-sm transition-all filter-btn bg-primary text-on-primary shadow-lg" data-filter="all">All</button>
+                <button class="px-6 py-2 rounded-full font-label-sm hover:border-primary hover:text-primary transition-all filter-btn border border-outline text-secondary" data-filter="power">Power</button>
+                <button class="px-6 py-2 rounded-full font-label-sm hover:border-primary hover:text-primary transition-all filter-btn border border-outline text-secondary" data-filter="control">Control</button>
+                <button class="px-6 py-2 rounded-full font-label-sm hover:border-primary hover:text-primary transition-all filter-btn border border-outline text-secondary" data-filter="electronics">Electronics</button>
+            </div>
+            <!-- Project Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Card 1 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card1_solar.jpg");'></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-on-primary px-3 py-1 rounded text-label-sm shadow-md">Featured</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">On-Grid Solar Power System</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Install Huawei Sun2000-3ktl-L1 Single Phase SCC inverter for on-grid solar system. Verifying cabling lines, connector integrity, and system telemetry via Solar Fusion monitoring app.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">PVSyst</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Homer Pro</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2024 • R&amp;D</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="control">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card2_plc.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">Trainer for PLC Control System Training</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Production line automation using OMRON brand Programmable Logic Controller with HMI integration for real-time monitoring of operational parameters.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">PLC</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Omron</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">CX Programmer</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2024 • Industrial App</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="electronics">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card3_mep.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">MEP Drafter for PKU Muhammadiyah Surakarta</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Designing MEP installation systems for PKU Muhammadiyah Surakarta building, including MDP and SDP design to ensure electrical system reliability.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">AutoCAD</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2024 • Campus Project</span>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card4_loadflow.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">Load Flow Analysis &amp; Harmonic Filter Design</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Analyze power flow in distribution system and Design High Pass Damped Filter to reduce harmonics using ETAP Power Station 19.1 software.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">ETAP</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Power System</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2024 • Simulation</span>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="electronics">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card5_hydroponics.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">IoT Hydroponic Smart Farming</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Implementing sensor technology, automatic control, and IoT-based monitoring to improve efficiency and sustainability of modern agriculture.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">ESP32</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Arduino IDE</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2024 • Smart Tech</span>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="electronics">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card6_solartracker.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">IoT Dual-Axis Solar Tracker</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Development of dual-axis solar tracker system with servo motor drives integrated with IoT using website-based real-time database.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Renewable</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">IoT</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">ESP32</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2025 • Final Project</span>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card7_preventivemaint.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">Preventive Maintenance</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Preventive maintenance on LVMDP panels and capacitor banks using thermal camera to detect temperature anomalies and prevent system failure.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">PM</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Thermocam</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2026 • Preventive</span>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card8_powerquality.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">Power Quality Analysis</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Comprehensive power quality analysis through real-time monitoring of voltage, current, and identification of harmonic interference on RST phases.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Power</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Harmonics</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2026 • Power Analyst</span>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card9_powertransfer.jpg");'></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-2">Transformer Maneuver Procedure</h3>
+                            <p class="text-body-md text-on-surface-variant mb-4">Execution of load transfer maneuver procedure from Transformer 3 to Transformer 2 via busbar system without interrupting power continuity.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">Substation</span>
+                            <span class="px-2 py-1 bg-surface-container-high text-on-secondary-fixed-variant rounded text-[12px] font-semibold">SOP Maneuver</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-low">
+                        <span class="text-label-sm text-secondary">2026 • Maneuver</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Empty State -->
+            <div class="hidden flex-col items-center justify-center py-20 text-center" id="empty-state">
+                <span class="material-symbols-outlined text-6xl text-outline-variant mb-4">search_off</span>
+                <p class="text-headline-md text-secondary">Projects not found</p>
+                <p class="text-body-md text-on-surface-variant mt-2">Try selecting another filter category.</p>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant full-width">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-12 max-w-container-max mx-auto gap-gutter">
+            <div class="flex flex-col gap-2">
+                <span class="text-label-sm font-label-sm font-bold text-primary uppercase tracking-widest">ENGR. PORTFOLIO</span>
+                <p class="text-body-md font-body-md text-on-surface-variant max-w-sm">
+                    Building the future through reliable system engineering and sustainable technological innovation.
+                </p>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-6">
+                <div class="flex gap-6">
+                    <a class="text-on-surface-variant hover:text-on-primary-container transition-colors" href="https://linkedin.com/in/ilhamyudhistiraardhana" target="_blank">LinkedIn</a>
+                    <a class="text-on-surface-variant hover:text-on-primary-container transition-colors" href="#" target="_blank">ResearchGate</a>
+                    <a class="text-on-surface-variant hover:text-on-primary-container transition-colors" href="mailto:ilhamyudhistiraardhana10@gmail.com">Email</a>
+                </div>
+                <p class="text-label-sm font-label-sm text-on-surface-variant text-center md:text-right">
+                    © 2025 Electrical Engineering Graduate | Universitas Muhammadiyah Surakarta
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            const emptyState = document.getElementById('empty-state');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-filter');
+                    
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-lg');
+                        b.classList.add('border', 'border-outline', 'text-secondary');
+                    });
+                    btn.classList.add('bg-primary', 'text-on-primary', 'shadow-lg');
+                    btn.classList.remove('border', 'border-outline', 'text-secondary');
+
+                    let visibleCount = 0;
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'flex';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    if (visibleCount === 0) {
+                        emptyState.classList.remove('hidden');
+                        emptyState.classList.add('flex');
+                    } else {
+                        emptyState.classList.add('hidden');
+                        emptyState.classList.remove('flex');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

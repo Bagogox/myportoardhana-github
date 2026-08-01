@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Engr. Portfolio | Electrical Engineering Graduate</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f3f9",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "outline": "#757682",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "surface-dim": "#dad9e0",
+                        "inverse-primary": "#b3c5ff",
+                        "secondary": "#545f72",
+                        "on-surface-variant": "#444650",
+                        "on-primary-container": "#758dd5",
+                        "surface-tint": "#435b9f",
+                        "on-primary": "#ffffff",
+                        "primary": "#00113a",
+                        "inverse-surface": "#2f3035",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#efedf3",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#586377",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d5e0f7",
+                        "on-primary-fixed": "#00174a",
+                        "tertiary": "#2d0700",
+                        "on-tertiary-fixed-variant": "#783018",
+                        "on-surface": "#1a1b20",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-variant": "#e3e2e8",
+                        "surface-container-high": "#e9e7ee",
+                        "on-tertiary-container": "#d37758",
+                        "on-tertiary-fixed": "#390b00",
+                        "surface-bright": "#faf8ff",
+                        "on-background": "#1a1b20",
+                        "surface-container-highest": "#e3e2e8",
+                        "tertiary-container": "#501300",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "primary-container": "#002366",
+                        "surface": "#faf8ff",
+                        "on-secondary-fixed": "#111c2c",
+                        "tertiary-fixed": "#ffdbd0",
+                        "background": "#faf8ff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f0f6",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "outline-variant": "#c5c6d2",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dbe1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "display-xl-mobile": ["Montserrat"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-xl": ["60px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-xl-mobile": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .circuit-bg {
+            background-image: radial-gradient(circle at 2px 2px, #E2E8F0 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #faf8ff 0%, #f4f3f9 100%);
+        }
+        .nav-blur {
+            backdrop-filter: blur(8px);
+            background-color: rgba(250, 248, 255, 0.8);
+        }
+        .gold-accent { color: #D4AF37; }
+        .gold-bg { background-color: #D4AF37; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+    <!-- Top Navigation Bar -->
+    <nav class="docked full-width top-0 sticky z-50 bg-surface nav-blur border-b border-outline-variant">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+            <a href="index.html" class="text-headline-md font-headline-md font-bold text-primary">
+                Ilham Yudhistira Ardhana, S.T
+            </a>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm text-label-sm transition-opacity active:opacity-80" href="index.html">Home</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="projects.html">Projects</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="skills.html">Skills</a>
+                <a class="text-secondary font-body-md hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="contact.html">Contact</a>
+                <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all shadow-sm">
+                    Download CV
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant px-6 py-4 flex flex-col gap-4">
+            <a class="text-primary font-bold text-label-sm py-1" href="index.html">Home</a>
+            <a class="text-secondary hover:text-primary text-label-sm py-1" href="projects.html">Projects</a>
+            <a class="text-secondary hover:text-primary text-label-sm py-1" href="skills.html">Skills</a>
+            <a class="text-secondary hover:text-primary text-label-sm py-1" href="contact.html">Contact</a>
+            <a href="/api/download-cv" download="CV_Ilham_Yudhistira_Ardhana.pdf" class="bg-primary text-on-primary text-center px-6 py-2.5 rounded-lg font-label-sm">Download CV</a>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden hero-gradient py-20 md:py-32" id="home">
+            <div class="absolute inset-0 circuit-bg opacity-40"></div>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10">
+                <div class="lg:col-span-7 flex flex-col justify-center">
+                    <span class="text-label-sm font-label-sm text-primary-container mb-4 uppercase tracking-widest border-l-4 border-primary pl-4">Electrical Engineering Graduate</span>
+                    <h1 class="text-display-xl-mobile md:text-display-xl font-display-xl text-primary mb-6">
+                        Bachelor of<br/> <span class="gold-accent">Electrical Engineering</span>
+                    </h1>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant mb-10 max-w-2xl">
+                        Studied: Electrical Circuits, Electrical Power Engineering, Power Electronics, Measurement and Instrumentation, Project and Industrial Management, Data Communication and Computer Networks, Electrical Power System Analysis, Electrical Machinery, Industrial Automation and PLC, Electrical Transmission and Distribution, Industrial Electrical Installation, Power Generation and Energy Systems, Computerization of Electrical Power Systems, Fault Analysis and Protection, and Renewable Energy Generation and Energy Systems.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a class="bg-primary-container text-white px-8 py-4 rounded-lg font-headline-md text-headline-md hover:shadow-lg transition-all flex items-center gap-2" href="projects.html">
+                            Explore My Projects
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                        <a class="border border-outline text-primary px-8 py-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container transition-all" href="contact.html">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center items-center mt-12 lg:mt-0">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-primary-fixed opacity-20 rounded-2xl rotate-3 group-hover:rotate-6 transition-transform"></div>
+                        <div class="absolute -inset-4 bg-tertiary-fixed opacity-10 rounded-2xl -rotate-3 group-hover:-rotate-6 transition-transform"></div>
+                        <div class="relative w-72 h-96 md:w-80 md:h-[480px] bg-white rounded-xl overflow-hidden border border-outline-variant shadow-xl">
+                            <img class="w-full h-full object-cover" alt="Ilham Yudhistira Ardhana - Asisten Lab" src="assets/images/home_asisten_lab.jpg" />
+                        </div>
+                        <!-- Floating Tech Tag -->
+                        <div class="absolute bottom-6 -right-8 bg-white p-4 rounded-lg shadow-lg border border-outline-variant animate-bounce">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full gold-bg flex items-center justify-center text-white">
+                                    <span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>bolt</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-primary uppercase">Specialization</p>
+                                    <p class="text-sm font-body-md text-on-surface-variant">Power Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section class="py-24 bg-surface" id="about">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-headline-lg font-headline-lg text-primary">Summary</h2>
+                        <div class="w-20 h-1.5 gold-bg rounded-full"></div>
+                        <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                            Recent Electrical Engineering graduate from Universitas Muhammadiyah Surakarta with a GPA of 3.40. Possess a disciplined, honest, and responsible work ethic in completing every task. During college, active as an Electrical Engineering laboratory assistant and completed an internship at PT Asia Pacific Fibers Tbk as an Electrical Power Staff, focusing on power flow analysis of distribution systems and maintenance of utility HVAC systems. Have a strong interest in Electrical Power System Analysis, Engineering Procurement and Construction (EPC), Electrical Maintenance, and open to other career opportunities. Able to work individually or in a team, with a drive for development, high dedication, adaptability, and enthusiasm for learning new things.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 pt-6">
+                            <div class="p-4 bg-surface-container-low rounded-xl border border-outline-variant">
+                                <p class="text-headline-md font-headline-md text-primary">3.40</p>
+                                <p class="text-label-sm font-label-sm text-secondary">Cumulative GPA</p>
+                            </div>
+                            <div class="p-4 bg-surface-container-low rounded-xl border border-outline-variant">
+                                <p class="text-headline-md font-headline-md text-primary">165</p>
+                                <p class="text-label-sm font-label-sm text-secondary">Credits (SKS)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                        <img class="w-full h-full object-cover" alt="Engineering Laboratory" src="assets/images/about_lab.jpg" />
+                        <div class="absolute inset-0 bg-primary opacity-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Highlights (Bento-style Grid) -->
+        <section class="py-24 bg-surface-container-low">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-16">
+                    <h2 class="text-headline-lg font-headline-lg text-primary mb-4">Major Areas of Focus</h2>
+                    <p class="text-body-md font-body-md text-on-surface-variant max-w-xl mx-auto">
+                        Applying core electrical engineering principles to solve complex real-world challenges.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Power Systems -->
+                    <div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all group flex flex-col">
+                        <div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">electric_bolt</span>
+                        </div>
+                        <h3 class="text-headline-md font-headline-md text-primary mb-3">Power Systems</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-6 flex-grow">
+                            Analysis and design of electrical distribution networks, focusing on stability, reliability, and renewable integration.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary uppercase">ETAP</span>
+                            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary uppercase">PVSyst</span>
+                        </div>
+                    </div>
+                    <!-- Internet of Things -->
+                    <div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all group flex flex-col">
+                        <div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">smart_toy</span>
+                        </div>
+                        <h3 class="text-headline-md font-headline-md text-primary mb-3">Internet of Things</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-6 flex-grow">
+                            Developing autonomous systems through sensor fusion, kinematics, and real-time embedded programming.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary uppercase">Arduino</span>
+                            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary uppercase">C++</span>
+                        </div>
+                    </div>
+                    <!-- Control Systems -->
+                    <div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all group flex flex-col">
+                        <div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">settings_input_component</span>
+                        </div>
+                        <h3 class="text-headline-md font-headline-md text-primary mb-3">Control Systems</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant mb-6 flex-grow">
+                            Implementing PID controllers and PLC logic to optimize industrial processes and automation workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary uppercase">MATLAB</span>
+                            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary uppercase">PLC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action Banner -->
+        <section class="py-20 relative overflow-hidden bg-primary text-on-primary">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
+                <h2 class="text-display-xl-mobile md:text-headline-lg font-headline-lg mb-6">Ready to see technical innovation in action?</h2>
+                <p class="text-body-lg font-body-lg mb-10 max-w-2xl mx-auto opacity-90">
+                    Explore my full portfolio of projects, ranging from solar panel optimization studies to industrial automation simulations.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="projects.html" class="bg-white text-primary px-10 py-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container transition-all">
+                        View Projects Portfolio
+                    </a>
+                    <a href="https://linkedin.com/in/ilhamyudhistiraardhana" target="_blank" class="border border-white/30 text-white px-10 py-4 rounded-lg font-headline-md text-headline-md hover:bg-white/10 transition-all">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="full-width bg-surface-container-lowest border-t border-outline-variant">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-12 max-w-container-max mx-auto gap-gutter">
+            <div class="text-left mb-6 md:mb-0">
+                <div class="text-label-sm font-label-sm font-bold text-primary uppercase tracking-widest mb-2">ENGR. PORTFOLIO</div>
+                <p class="text-body-md font-body-md text-on-surface-variant">
+                    © 2025 Electrical Engineering Graduate | Universitas Muhammadiyah Surakarta
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="flex gap-6">
+                    <a class="text-on-surface-variant hover:text-on-primary-container transition-colors font-label-sm text-label-sm" href="https://linkedin.com/in/ilhamyudhistiraardhana" target="_blank">LinkedIn</a>
+                    <a class="text-on-surface-variant hover:text-on-primary-container transition-colors font-label-sm text-label-sm" href="#" target="_blank">ResearchGate</a>
+                    <a class="text-on-surface-variant hover:text-on-primary-container transition-colors font-label-sm text-label-sm" href="mailto:ilhamyudhistiraardhana10@gmail.com">Email</a>
+                </div>
+                <button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all focus:outline-none focus:ring-2 focus:ring-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <span class="material-symbols-outlined">arrow_upward</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
