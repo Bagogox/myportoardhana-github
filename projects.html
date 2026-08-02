@@ -6,6 +6,8 @@
     <title>Technical &amp; Research Projects | Engr. Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <script src="assets/js/theme.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -21,6 +23,10 @@
             background-position: 0 0, 10px 10px;
             opacity: 0.4;
         }
+        html.dark .circuit-pattern {
+            background-color: #12151c;
+            background-image: radial-gradient(#2a4386 0.5px, transparent 0.5px), radial-gradient(#2a4386 0.5px, #12151c 0.5px);
+        }
     </style>
     <script id="tailwind-config">
         tailwind.config = {
@@ -28,53 +34,53 @@
             theme: {
                 extend: {
                     "colors": {
-                        "surface-container-low": "#f4f3f9",
-                        "tertiary-fixed-dim": "#ffb59e",
-                        "outline": "#757682",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed-dim": "#bcc7dd",
-                        "surface-dim": "#dad9e0",
-                        "inverse-primary": "#b3c5ff",
-                        "secondary": "#545f72",
-                        "on-surface-variant": "#444650",
-                        "on-primary-container": "#758dd5",
-                        "surface-tint": "#435b9f",
-                        "on-primary": "#ffffff",
-                        "primary": "#00113a",
-                        "inverse-surface": "#2f3035",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-container": "#efedf3",
-                        "error": "#ba1a1a",
-                        "on-secondary-container": "#586377",
-                        "secondary-fixed": "#d8e3fa",
-                        "on-error": "#ffffff",
-                        "secondary-container": "#d5e0f7",
-                        "on-primary-fixed": "#00174a",
-                        "tertiary": "#2d0700",
-                        "on-tertiary-fixed-variant": "#783018",
-                        "on-surface": "#1a1b20",
-                        "on-secondary-fixed-variant": "#3c475a",
-                        "surface-variant": "#e3e2e8",
-                        "surface-container-high": "#e9e7ee",
-                        "on-tertiary-container": "#d37758",
-                        "on-tertiary-fixed": "#390b00",
-                        "surface-bright": "#faf8ff",
-                        "on-background": "#1a1b20",
-                        "surface-container-highest": "#e3e2e8",
-                        "tertiary-container": "#501300",
-                        "on-primary-fixed-variant": "#2a4386",
-                        "primary-container": "#002366",
-                        "surface": "#faf8ff",
-                        "on-secondary-fixed": "#111c2c",
-                        "tertiary-fixed": "#ffdbd0",
-                        "background": "#faf8ff",
-                        "on-error-container": "#93000a",
-                        "inverse-on-surface": "#f1f0f6",
-                        "primary-fixed-dim": "#b3c5ff",
-                        "outline-variant": "#c5c6d2",
-                        "error-container": "#ffdad6",
-                        "primary-fixed": "#dbe1ff"
+                        "surface-container-low": "var(--color-surface-container-low)",
+                        "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+                        "outline": "var(--color-outline)",
+                        "on-secondary": "var(--color-on-secondary)",
+                        "on-tertiary": "var(--color-on-tertiary)",
+                        "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+                        "surface-dim": "var(--color-surface-dim)",
+                        "inverse-primary": "var(--color-inverse-primary)",
+                        "secondary": "var(--color-secondary)",
+                        "on-surface-variant": "var(--color-on-surface-variant)",
+                        "on-primary-container": "var(--color-on-primary-container)",
+                        "surface-tint": "var(--color-surface-tint)",
+                        "on-primary": "var(--color-on-primary)",
+                        "primary": "var(--color-primary)",
+                        "inverse-surface": "var(--color-inverse-surface)",
+                        "surface-container-lowest": "var(--color-surface-container-lowest)",
+                        "surface-container": "var(--color-surface-container)",
+                        "error": "var(--color-error)",
+                        "on-secondary-container": "var(--color-on-secondary-container)",
+                        "secondary-fixed": "var(--color-secondary-fixed)",
+                        "on-error": "var(--color-on-error)",
+                        "secondary-container": "var(--color-secondary-container)",
+                        "on-primary-fixed": "var(--color-on-primary-fixed)",
+                        "tertiary": "var(--color-tertiary)",
+                        "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+                        "on-surface": "var(--color-on-surface)",
+                        "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+                        "surface-variant": "var(--color-surface-variant)",
+                        "surface-container-high": "var(--color-surface-container-high)",
+                        "on-tertiary-container": "var(--color-on-tertiary-container)",
+                        "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+                        "surface-bright": "var(--color-surface-bright)",
+                        "on-background": "var(--color-on-background)",
+                        "surface-container-highest": "var(--color-surface-container-highest)",
+                        "tertiary-container": "var(--color-tertiary-container)",
+                        "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+                        "primary-container": "var(--color-primary-container)",
+                        "surface": "var(--color-surface)",
+                        "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+                        "tertiary-fixed": "var(--color-tertiary-fixed)",
+                        "background": "var(--color-background)",
+                        "on-error-container": "var(--color-on-error-container)",
+                        "inverse-on-surface": "var(--color-inverse-on-surface)",
+                        "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+                        "outline-variant": "var(--color-outline-variant)",
+                        "error-container": "var(--color-error-container)",
+                        "primary-fixed": "var(--color-primary-fixed)",
                     },
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
@@ -129,9 +135,14 @@
                     Download CV
                 </a>
             </div>
-            <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
-                <span class="material-symbols-outlined text-3xl">menu</span>
-            </button>
+            <div class="flex items-center gap-3">
+                <button onclick="toggleTheme()" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <span class="material-symbols-outlined text-[20px]" data-theme-icon>dark_mode</span>
+                </button>
+                <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
         </nav>
         <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant px-6 py-4 flex flex-col gap-4">
             <a class="text-secondary text-label-sm py-1" href="index.html">Home</a>
@@ -166,7 +177,7 @@
             <!-- Project Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
                 <!-- Card 1 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal" data-category="power">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card1_solar.jpg");'></div>
                         <div class="absolute top-4 left-4">
@@ -188,7 +199,7 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="control">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-1" data-category="control">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card2_plc.jpg");'></div>
                     </div>
@@ -208,7 +219,7 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="electronics">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-2" data-category="electronics">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card3_mep.jpg");'></div>
                     </div>
@@ -226,7 +237,7 @@
                     </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-3" data-category="power">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card4_loadflow.jpg");'></div>
                     </div>
@@ -245,7 +256,7 @@
                     </div>
                 </div>
                 <!-- Card 5 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="electronics">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-4" data-category="electronics">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card5_hydroponics.jpg");'></div>
                     </div>
@@ -265,7 +276,7 @@
                     </div>
                 </div>
                 <!-- Card 6 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="electronics">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-5" data-category="electronics">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card6_solartracker.jpg");'></div>
                     </div>
@@ -285,7 +296,7 @@
                     </div>
                 </div>
                 <!-- Card 7 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-1" data-category="power">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card7_preventivemaint.jpg");'></div>
                     </div>
@@ -304,7 +315,7 @@
                     </div>
                 </div>
                 <!-- Card 8 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-2" data-category="power">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card8_powerquality.jpg");'></div>
                     </div>
@@ -323,7 +334,7 @@
                     </div>
                 </div>
                 <!-- Card 9 -->
-                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="power">
+                <div class="project-card group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col reveal reveal-delay-3" data-category="power">
                     <div class="relative h-64 overflow-hidden">
                         <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("assets/images/card9_powertransfer.jpg");'></div>
                     </div>
@@ -415,5 +426,6 @@
             });
         });
     </script>
+    <script src="assets/js/reveal.js"></script>
 </body>
 </html>
